@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Search | Career Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='job_search.css') }}" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>🔍 Job Search</h1>
+    <p>Explore top job opportunities tailored for you</p>
+  </header>
+
+  <!-- Search bar (UI only) -->
+  <div class="search-box">
+    <input type="text" placeholder="Search by title, company or skill..." />
+    <button>🔎 Search</button>
+  </div>
+
+  <main class="job-container">
+
+    <!-- Example job card -->
+    <div class="job-card">
+      <h2>💻 Frontend Developer</h2>
+      <div class="meta"><span class="badge">Remote</span><span class="badge">Full-Time</span></div>
+      <p><strong>Company:</strong> PixelCraft Tech</p>
+      <p><strong>Location:</strong> Remote / Bangalore</p>
+      <p><strong>CTC:</strong> ₹6–10 LPA</p>
+      <div class="tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+      </div>
+      <p class="posted">📅 Posted: 2 days ago</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h2>📊 Data Analyst</h2>
+      <div class="meta"><span class="badge">Full-Time</span></div>
+      <p><strong>Company:</strong> InsightIQ Analytics</p>
+      <p><strong>Location:</strong> Hyderabad</p>
+      <p><strong>CTC:</strong> ₹5–8 LPA</p>
+      <div class="tags">
+        <span>Python</span><span>Excel</span><span>SQL</span><span>Power BI</span>
+      </div>
+      <p class="posted">📅 Posted: 4 days ago</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h2>☁️ Cloud Engineer</h2>
+      <div class="meta"><span class="badge">Pune</span><span class="badge">Full-Time</span></div>
+      <p><strong>Company:</strong> SkyVault Solutions</p>
+      <p><strong>Location:</strong> Pune</p>
+      <p><strong>CTC:</strong> ₹8–12 LPA</p>
+      <div class="tags">
+        <span>AWS</span><span>Linux</span><span>Docker</span><span>CI/CD</span>
+      </div>
+      <p class="posted">📅 Posted: 1 week ago</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h2>🧠 AI/ML Intern</h2>
+      <div class="meta"><span class="badge">Internship</span><span class="badge">Remote</span></div>
+      <p><strong>Company:</strong> NeuralNext AI</p>
+      <p><strong>Location:</strong> Remote</p>
+      <p><strong>CTC:</strong> ₹15,000/month</p>
+      <div class="tags">
+        <span>Python</span><span>TensorFlow</span><span>Pandas</span>
+      </div>
+      <p class="posted">📅 Posted: Today</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h2>📱 Mobile App Developer</h2>
+      <div class="meta"><span class="badge">Full-Time</span></div>
+      <p><strong>Company:</strong> Appify Inc.</p>
+      <p><strong>Location:</strong> Mumbai</p>
+      <p><strong>CTC:</strong> ₹7–9 LPA</p>
+      <div class="tags">
+        <span>Flutter</span><span>Dart</span><span>Firebase</span>
+      </div>
+      <p class="posted">📅 Posted: 3 days ago</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h2>🛒 Digital Marketing Executive</h2>
+      <div class="meta"><span class="badge">Full-Time</span></div>
+      <p><strong>Company:</strong> MarketVista</p>
+      <p><strong>Location:</strong> Ahmedabad</p>
+      <p><strong>CTC:</strong> ₹4.5–6 LPA</p>
+      <div class="tags">
+        <span>SEO</span><span>Google Ads</span><span>Analytics</span>
+      </div>
+      <p class="posted">📅 Posted: 5 days ago</p>
+      <button class="apply-btn">Apply Now</button>
+    </div>
+
+  </main>
+</body>
+</html>

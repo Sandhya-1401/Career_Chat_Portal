@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7ff;
+  color: #333;
+}
+h1, h2, h3 { margin: 0 0 .6rem 0; }
+p { margin: .4rem 0 .9rem 0; line-height: 1.55; }
+
+.hero {
+  text-align: center;
+  padding: 54px 20px 40px;
+  background: linear-gradient(135deg, #0062ff, #4f82ff);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+}
+.hero h1 { font-size: 26px; letter-spacing: .4px; }
+.hero p { opacity: .9; }
+
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 18px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  background: #fff;
+  padding: 26px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  transition: transform .2s ease, box-shadow .3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+.card h2 { color: #004bcc; font-size: 20px; }
+
+.tips {
+  margin-left: 1.2rem;
+}
+.tips li {
+  margin: .5rem 0;
+  line-height: 1.55;
+}
+.example {
+  margin-top: 6px;
+  padding: 10px 12px;
+  background: #e8f1ff;
+  border-left: 4px solid #0062ff;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.checklist label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: .5em 0;
+  font-size: 14px;
+}
+.checklist input { accent-color: #0062ff; }
+
+.resources ul {
+  margin-left: 1.2em;
+}
+.resources li {
+  margin: .35em 0;
+  font-size: 14px;
+}
+.resources a {
+  color: #0062ff;
+  text-decoration: none;
+}
+.resources a:hover {
+  text-decoration: underline;
+}
+
+.foot {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.note {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* dark mode */
+body.dark {
+  background: #111;
+  color: #eee;
+}
+body.dark .hero {
+  background: linear-gradient(135deg, #00349c, #002b80);
+}
+body.dark .card {
+  background: #1e1e1e;
+  color: #ddd;
+}
+body.dark .example {
+  background: #2a2e3c;
+  border-left-color: #5692ff;
+}
+body.dark .resources a {
+  color: #7fb4ff;
+}

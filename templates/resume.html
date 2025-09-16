@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder – Career Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='resume.css') }}"/>
+</head>
+<body>
+
+<header class="header">
+  <h1>📄 Resume Builder</h1>
+  <p>Create an ATS-friendly and professional resume in minutes</p>
+</header>
+
+<div class="container">
+
+  <!-- Intro Section -->
+  <section class="info">
+    <h2>What is an ATS?</h2>
+    <p><strong>ATS (Applicant Tracking System)</strong> is software used by companies to scan and filter resumes based on keywords before a human ever sees them.</p>
+    <ul>
+      <li>✅ Use standard headings (e.g., "Education", "Experience").</li>
+      <li>✅ Use bullet points, not tables or images.</li>
+      <li>❌ Don’t use fancy fonts, icons, or columns.</li>
+    </ul>
+  </section>
+
+  <!-- Tips Section -->
+  <section class="info">
+    <h2>Resume Building Tips</h2>
+    <ul>
+      <li>Start with a strong summary (2–3 lines).</li>
+      <li>Quantify your work (e.g., “Improved efficiency by 35%”).</li>
+      <li>Use action words: <em>Led, Developed, Managed, Optimized</em>.</li>
+      <li>Keep it 1 page if you're a fresher / < 3 years experience.</li>
+    </ul>
+  </section>
+
+  <!-- Resume Form -->
+  <section class="form-box">
+    <h2>👤 Personal Info</h2>
+    <input type="text" placeholder="Full Name" />
+    <input type="text" placeholder="Email Address" />
+    <input type="text" placeholder="Phone Number" />
+    <input type="text" placeholder="LinkedIn or GitHub Profile" />
+
+    <h2>🎓 Education</h2>
+    <input type="text" placeholder="Degree & Branch" />
+    <input type="text" placeholder="University / Institute" />
+    <input type="text" placeholder="Year of Graduation" />
+
+    <h2>💼 Work Experience / Internships</h2>
+    <input type="text" placeholder="Company / Organization" />
+    <input type="text" placeholder="Role / Title" />
+    <input type="text" placeholder="Duration (e.g., Jan 2023 - Present)" />
+    <textarea placeholder="Responsibilities, tools used, achievements..."></textarea>
+
+    <h2>🛠 Skills</h2>
+    <input type="text" placeholder="e.g., Python, SQL, Power BI, JavaScript" />
+
+    <h2>🏆 Projects</h2>
+    <input type="text" placeholder="Project Title" />
+    <textarea placeholder="Brief about what you built, tools used, and impact"></textarea>
+  </section>
+
+  <!-- Do’s & Don’ts -->
+  <section class="info checklist">
+    <h2>✅ Do’s & ❌ Don’ts</h2>
+    <ul>
+      <li>✅ Use consistent fonts and spacing.</li>
+      <li>✅ Save as PDF, named like: <code>YourName_Resume.pdf</code></li>
+      <li>❌ Don’t write long paragraphs – use bullet points.</li>
+      <li>❌ Don’t lie – be honest and confident!</li>
+    </ul>
+  </section>
+
+  <!-- Resources -->
+  <section class="info resources">
+    <h2>📚 Resume Writing Resources</h2>
+    <ul>
+      <li><a href="https://novoresume.com/resume-templates" target="_blank">Free Resume Templates</a></li>
+      <li><a href="https://zety.com/resume-examples" target="_blank">Sample Resumes by Role</a></li>
+      <li><a href="https://resumeworded.com/resume-scanner" target="_blank">ATS Resume Scanner (Free)</a></li>
+    </ul>
+  </section>
+
+  <div class="btn-wrap">
+    <button disabled>Download PDF (Coming Soon)</button>
+  </div>
+
+</div>
+
+</body>
+</html>

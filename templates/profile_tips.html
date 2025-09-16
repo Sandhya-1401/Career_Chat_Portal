@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Profile Tips | Career Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile_tips.css') }}"/>
+</head>
+<body>
+
+<header class="hero">
+  <h1>🧩 Build a Powerful Online Profile</h1>
+  <p>Tips to improve your visibility and credibility across LinkedIn, GitHub, LeetCode, and Kaggle.</p>
+</header>
+
+<main class="wrap">
+
+  <!-- LinkedIn -->
+  <section class="card">
+    <h2>🔗 LinkedIn Optimisation</h2>
+    <ul class="tips">
+      <li><strong>Headline:</strong> Use a clear role + tech stack + achievement.  
+        <div class="example">✅ “Data Analyst | Python, SQL, Power BI | +25% reporting efficiency”</div></li>
+      <li><strong>About Section:</strong> Share your career story in ~100 words: who you are, what you’ve done, what you want.</li>
+      <li><strong>Custom URL:</strong> Edit to linkedin.com/in/yourname</li>
+      <li><strong>Recommendations:</strong> Request after good collaborations or internships.</li>
+      <li><strong>Weekly Activity:</strong> Post learnings, comment on trends, and engage with recruiters.</li>
+    </ul>
+  </section>
+
+  <!-- GitHub -->
+  <section class="card">
+    <h2>💻 GitHub Presence</h2>
+    <ul class="tips">
+      <li><strong>Clean Repos:</strong> Add README, license, and .gitignore to every project.</li>
+      <li><strong>Project Structure:</strong> Group similar work into folders (e.g., Web Projects, APIs, ML Models).</li>
+      <li><strong>Pin Best Work:</strong> Pin 3–6 top projects that reflect your strengths.</li>
+      <li><strong>Contributions Graph:</strong> Stay consistent with commits—even small updates count.</li>
+      <li><strong>Descriptive Commits:</strong> Use meaningful commit messages (e.g., "fixed search bug", "added user auth").</li>
+    </ul>
+  </section>
+
+  <!-- LeetCode -->
+  <section class="card">
+    <h2>📐 LeetCode Profile</h2>
+    <ul class="tips">
+      <li><strong>Consistency:</strong> Practice 3–5 problems/week and track progress.</li>
+      <li><strong>Contests:</strong> Participate regularly in biweekly/weekly contests.</li>
+      <li><strong>Topics:</strong> Focus on key topics like Arrays, Trees, DP, and Graphs.</li>
+      <li><strong>Profile Link:</strong> Add LeetCode profile to your resume and LinkedIn.</li>
+    </ul>
+    <p class="note">Note: You can include top solved problems or rating (if good) in your bio or resume.</p>
+  </section>
+
+  <!-- Kaggle -->
+  <section class="card">
+    <h2>📊 Kaggle Profile</h2>
+    <ul class="tips">
+      <li><strong>Notebooks:</strong> Create clean, well-commented notebooks. Focus on EDA and visualizations.</li>
+      <li><strong>Competitions:</strong> Participate in beginner-friendly contests to build skill + ranking.</li>
+      <li><strong>Datasets:</strong> Upload public datasets or share analysis on trending ones.</li>
+      <li><strong>Discussion:</strong> Engage in forum threads to learn and get visibility.</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio Tips -->
+  <section class="card">
+    <h2>🌐 Personal Portfolio</h2>
+    <ul class="tips">
+      <li>Host it using GitHub Pages / Netlify / Vercel.</li>
+      <li>Highlight 3–5 projects with live links + source code.</li>
+      <li>Include a short bio, downloadable resume, and contact info.</li>
+      <li>Use a custom domain if possible (e.g., yourname.dev).</li>
+    </ul>
+  </section>
+
+  <!-- Quick Checklist -->
+  <section class="card checklist">
+    <h2>✅ Profile Checklist</h2>
+    <label><input type="checkbox"> Professional photo (plain background)</label>
+    <label><input type="checkbox"> Custom banner (branding / tech theme)</label>
+    <label><input type="checkbox"> Updated contact info on all platforms</label>
+    <label><input type="checkbox"> At least 3 strong project links</label>
+    <label><input type="checkbox"> GitHub / LinkedIn visible in your resume</label>
+  </section>
+
+  <!-- Resources -->
+  <section class="card resources">
+    <h2>📚 Useful Resources</h2>
+    <ul>
+      <li><a href="https://linkedin.com/help" target="_blank">LinkedIn Help Center</a></li>
+      <li><a href="https://pages.github.com/" target="_blank">GitHub Pages Hosting</a></li>
+      <li><a href="https://leetcode.com/explore/" target="_blank">LeetCode Explore Tracks</a></li>
+      <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Courses</a></li>
+    </ul>
+  </section>
+
+  <footer class="foot">
+    Want more help? Just ask Career Chat in the sidebar 💬
+  </footer>
+
+</main>
+</body>
+</html>

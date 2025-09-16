@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Chat – AI Job-Portal Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header>
+    <i data-lucide="bot"></i>
+    <h1>Career Chat</h1>
+    <button id="theme-toggle" title="Toggle Theme">🌙</button>
+  </header>
+
+  <!-- Main layout -->
+  <div class="chat-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand"><i data-lucide="briefcase"></i> Dashboard</div>
+      <nav>
+        <a href="{{ url_for('job_search') }}"><i data-lucide="search"></i> Job Search</a>
+        <a href="{{ url_for('profile_tips') }}"><i data-lucide="user"></i> Profile Tips</a>
+        <a href="{{ url_for('resume') }}"><i data-lucide="file-text"></i> Resume Builder</a>
+        <a href="{{ url_for('interview') }}"><i data-lucide="sparkles"></i> Interview Prep</a>
+      </nav>
+    </aside>
+
+    <!-- Chat area -->
+    <section class="chat-area">
+      <div class="messages" id="chat-log">
+        <div class="bubble bot">
+          👋 <strong>Hi there!</strong><br>
+          I'm <b>Career Chat</b>, your personal AI assistant.<br>
+          Ask me anything about jobs, careers, or resumes!
+        </div>
+      </div>
+      <form class="composer" id="chat-form">
+        <button type="button" id="emoji-toggle" title="Emoji">😃</button>
+        <input id="user-input" type="text" placeholder="Type your question…" autocomplete="off" required />
+        <button id="send-btn" aria-label="Send" disabled>➤</button>
+      </form>
+    </section>
+  </div>
+
+  <audio id="message-sound" src="{{ url_for('static', filename='pop.mp3') }}" preload="auto"></audio>
+
+  <script src="https://unpkg.com/@joeattardi/emoji-button@latest/dist/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const btn = document.getElementById("theme-toggle");
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>

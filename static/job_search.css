@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f7ff;
+  color: #333;
+}
+
+.top-bar {
+  background: linear-gradient(135deg, #0062ff, #4f82ff);
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.top-bar p {
+  margin-top: 4px;
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* Search Bar */
+.search-box {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 12px;
+  background-color: #e7efff;
+}
+
+.search-box input {
+  padding: 12px 16px;
+  width: 50%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.search-box button {
+  padding: 12px 16px;
+  border: none;
+  background-color: #0062ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.search-box button:hover {
+  background-color: #004dcc;
+}
+
+/* Job Card Grid */
+.job-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px 40px;
+  justify-content: center;
+}
+
+.job-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  width: 300px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.job-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.job-card h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #004bcc;
+}
+
+.job-card p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.apply-btn {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #0062ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.25s ease;
+}
+
+.apply-btn:hover {
+  background-color: #004bcc;
+}
+
+/* Skills tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tags span {
+  background-color: #e1ebff;
+  color: #004bcc;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.meta {
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #f0f4ff;
+  color: #0062ff;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-right: 6px;
+}
+
+.posted {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-box input {
+    width: 70%;
+  }
+
+  .job-container {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .job-card {
+    width: 90%;
+  }
+}
